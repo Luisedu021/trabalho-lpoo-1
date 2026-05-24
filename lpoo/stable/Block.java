@@ -25,7 +25,7 @@ public class Block {
         return this.localVariables.get(name);
     }
 
-    // Método para a SymbolTable conseguir voltar ao bloco pai
+    // Metodo para a SymbolTable conseguir voltar ao bloco pai
     public Block getParentBlock() {
         return this.parentBlock;
     }

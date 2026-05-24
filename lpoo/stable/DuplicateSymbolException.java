@@ -1,7 +1,10 @@
 package lpoo.stable;
 
 /**
- * * @author // put your name(s) here
+ *
+ * @author Luís Eduardo Lopes dos Santos
+ * Otávio Ferreira Augusto
+ * Guilherme Escobar
  */
 public class DuplicateSymbolException extends Exception {
     

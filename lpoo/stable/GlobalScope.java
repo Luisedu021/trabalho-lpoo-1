@@ -4,11 +4,13 @@ import java.util.*;
 
 /**
  *
- * @author Luís Eduardo Lopes dos Santos Otavio Augusto Ferreira Guilherme Escobar
+ * @author Luís Eduardo Lopes dos Santos
+ * Otávio Ferreira Augusto
+ * Guilherme Escobar
  */
 public class GlobalScope
 {
-  // insert your code here
+
   private TreeMap<String, Class> classes;
 
   public GlobalScope(){

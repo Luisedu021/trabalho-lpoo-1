@@ -5,9 +5,10 @@ import java.util.List;
 
 /**
  *
- * @author // put your name(s) here
+ * @author Luís Eduardo Lopes dos Santos
+ * Otávio Ferreira Augusto
+ * Guilherme Escobar
  */
-
 public final class ParameterList{
   private List<Type> parameters = new ArrayList<>();
 

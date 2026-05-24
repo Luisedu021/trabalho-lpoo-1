@@ -5,7 +5,9 @@ import java.util.TreeMap;
 
 /**
  *
- *Luís Eduardo Lopes dos Santos,Guilherme Escobar,Otávio Augusto
+ * @author Luís Eduardo Lopes dos Santos
+ * Otávio Ferreira Augusto
+ * Guilherme Escobar
  */
 public class Method
 {

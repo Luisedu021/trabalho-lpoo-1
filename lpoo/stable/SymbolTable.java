@@ -2,9 +2,11 @@ package lpoo.stable;
 
 import java.util.List;
 import java.util.ArrayList;
-
 /**
- * @Luis Eduardo Lopes dos Santos, Guilherme Escobar, Otávio Augusto
+ *
+ * @author Luís Eduardo Lopes dos Santos
+ * Otávio Ferreira Augusto
+ * Guilherme Escobar
  */
 public class SymbolTable 
 {
@@ -127,10 +129,6 @@ public class SymbolTable
 
             return null; // Se tinha ponto e não achou, a busca qualificada morre aqui.
         }
-        // <--- O if do .contains(".") TEM que fechar aqui! --->
-
-
-        // --- 2. BUSCA ASCENDENTE PARA NOME SIMPLES ---
 
         // 2.A) Procura no bloco atual e sobe para os blocos pais
         Block blocoAtual = this.currentBlock;

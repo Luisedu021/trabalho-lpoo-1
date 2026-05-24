@@ -9,16 +9,16 @@ public final class Main {
             Type intType = new Type("int");
             Type stringType = new Type("String");
 
-            System.out.println("Adicionando String...");
+            System.out.println("Adicionando String");
             st.addClass("String");
 
-            System.out.println("Adicionando e abrindo Test...");
+            System.out.println("Adicionando e abrindo Test");
             lpoo.stable.Class clazz = st.addClass("Test");
             st.openClass(clazz);
 
-            //TESTE DE ATRIBUTO DE CLASSE
+
             //adicionando uma variável direto na classe
-            System.out.println("Adicionando atributo de classe 'instanciaId'...");
+            System.out.println("Adicionando atributo de classe 'instanciaId'");
             Variable attrId = new Variable("instanciaId", intType);
             st.addVariable(attrId);
 
@@ -29,20 +29,20 @@ public final class Main {
 
             //TESTE DE VARIÁVEL LOCAL DE MÉTODO
             //adicionando uma variável local no método main
-            System.out.println("Adicionando variável local 'x' no método...");
+            System.out.println("Adicionando variável local 'x' no método");
             Variable varX = new Variable("x", intType);
             st.addVariable(varX);
 
             //TESTE DEW ESCOPO DE BLOCO EX: UM IF OU WHILE
-            System.out.println("Abrindo um bloco local interno...");
+            System.out.println("Abrindo um bloco local interno");
             st.openBlock();
 
-            System.out.println("Adicionando variável local 'y' no bloco...");
+            System.out.println("Adicionando variável local 'y' no bloco");
             Variable varY = new Variable("y", stringType);
             st.addVariable(varY);
 
             //EXECUTANDO AS BUSCAS (validando a busca ascendente)
-            System.out.println("\n--- Realizando buscas na Tabela de Símbolos ---");
+            System.out.println("\n--- Realizando buscas na Tabela de Símbolos ");
 
             //Procura 'y' (deve achar no bloco atual)
             Variable findY = st.findVariable("y");
@@ -56,19 +56,19 @@ public final class Main {
             Variable findAttr = st.findVariable("instanciaId");
             System.out.println("Busca por 'instanciaId' (atributo da classe): " + (findAttr != null ? "Achou! Tipo: " + findAttr.getType().getTypeName() : "Não achou"));
 
-            System.out.println("\nFechando o bloco local...");
+            System.out.println("\nFechando o bloco local");
             st.closeBlock();
 
             //Fim do método
             st.closeMethod();
 
             //Fim da classe Test
-            System.out.println("Fechando a classe Test...");
+            System.out.println("Fechando a classe Test");
             st.closeClass();
 
             //Teste de herança (busca ascendente na superclasse)
-            System.out.println("\n--- Testando Herança ---");
-            System.out.println("Criando classe SubTest que herda de Test...");
+            System.out.println("\n- Testando Herança-");
+            System.out.println("Criando classe SubTest que herda de Test");
             lpoo.stable.Class clazzSub = st.addClass("SubTest");
             clazzSub.setSuperClass(clazz); // Define Test como superclasse de SubTest
 
